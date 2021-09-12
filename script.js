@@ -5,7 +5,12 @@ var confirmNumberofChars;
 var confirmCharSymbols;
 var confirmUppercaseChars;
 var confirmLowercaseChars;
-
+// Special symbols
+symbols = ["!“#$%&’()*+,-./:;<=>?@[\]^_`{|}"];
+//Numeric characters
+number = [1,2,3,4,5,6,7,8,9,0];
+// Alphabetical characters
+charset= "abcdefghijklmnopqrstuvwxyz";
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
