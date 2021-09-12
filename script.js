@@ -24,8 +24,10 @@ charAlpha2 = charAlpha.map(toUpper);
 var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", function(){
-  pass
-}
+  password = generatePassword();
+  document.getElementById("password").placeholder = password;
+});
+// Start function to generate a password
 // Write password to the #password input
 
 function writePassword() {
