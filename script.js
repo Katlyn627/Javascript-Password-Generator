@@ -28,9 +28,24 @@ generateBtn.addEventListener("click", function(){
   document.getElementById("password").placeholder = password;
 });
 // Start function to generate a password
-// Write password to the #password input
-
 function writePassword() {
+  enter = window.prompt("How many characters would you like in your password? Choose between 2 and 128");
+  // First if statement for user validation 
+  if(!enter){
+    alert("This needs a value");
+  }
+  else if(enter < 8 || enter > 128){
+    // Validates the users chice and input
+    // Start user input prompts
+    enter = window.prompt("You must choose between 8 and 128");
+  }
+  else {
+    confirmNumberofCharacters = confirm("Will this contain numbers?");
+    confirmCharSymbols = confirm("Will this contain special characters?");
+    confirmUppercaseChars = confirm("Will this contain Uppercase letters?");
+    confirmLowercaseChars = confirm("Will this contain Lowercase letters?");
+    };
+  }
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
