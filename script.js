@@ -10,11 +10,22 @@ symbols = ["!“#$%&’()*+,-./:;<=>?@[\]^_`{|}"];
 //Numeric characters
 number = [1,2,3,4,5,6,7,8,9,0];
 // Alphabetical characters
-charset= "abcdefghijklmnopqrstuvwxyz";
+charAlpha= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+// Choices delcared outside of if statement
+var choices;
+// Convert letters to uppercase
+var toUpperCase = function (x){
+  return x.toUpperCase();
+};
+// Create variable for uppercase conversion
+charAlpha2 = charAlpha.map(toUpper);
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
+// Add event listener to generate button
+generateBtn.addEventListener("click", function(){
+  pass
+}
 // Write password to the #password input
 
 function writePassword() {
@@ -26,5 +37,3 @@ function writePassword() {
   
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
