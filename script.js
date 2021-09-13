@@ -25,7 +25,7 @@ var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", function () {
   password = generatePassword();
-  document.getElementById("password").placeholder = password;
+  var passwordText = document.querySelector("#password");
 });
 // Start function to generate a password
 function writePassword() {
@@ -102,4 +102,11 @@ function writePassword() {
         else if (confirmUppercase) {
         choices = space.concat(charAlpha2);
         };
+        // Create var password placeholder for empty array when length is chosen
+        var passwordText = [];
+        // Create for loop to randomly select password variables
+        for(var i = 0; i < enter; i++){
+          var pickChoices = choices[Math.floor(Math.random()* choices.length)];
+          passwordText.push(pickChoices);
+        }
 }
