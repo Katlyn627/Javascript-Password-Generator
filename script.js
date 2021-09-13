@@ -68,5 +68,23 @@ function writePassword() {
     else if (confirmNumberofChars && confirmLowercaseChars && confirmUppercaseChars) {
     choices = number.concat(charAlpha, charAlpha2);
   }
-    
+  // If else if for 2 positive options 
+    if (confirmCharSymbols && confirmNumberofChars) {
+      choices = symbols.concat(number);
+      } 
+      else if (confirmCharSymbols && confirmLowercaseChars) {
+      choices = symbols.concat(charAlpha);
+      } 
+      else if (confirmCharSymbols && confirmUppercaseChars) {
+      choices = symbols.concat(alpha2);
+      }
+      else if (confirmLowercaseChars && confirmNumberofChars) {
+      choices = charAlpha.concat(number);
+      } 
+      else if (confirmLowercaseChars && confirmUppercaseChars) {
+      choices = charAlpha.concat(charAlpha2);
+      } 
+      else if (confirmNumberofChars && confirmUppercaseChars) {
+      choices = number.concat(charAlpha2);
+    }
 }
