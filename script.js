@@ -55,7 +55,7 @@ function writePassword() {
     else if(confirmCharSymbols && confirmNumberofCharacters && confirmUppercaseChars && confirmLowercaseChars) {
     choices = symbols.concat(number, charAlpha, charAlpha2);{
     }
-    // If else if for 3 posotive outcome choices
+    // If else if for 3 posotive outcome of choices
     if(confirmCharSymbols && confirmNumberofChars && confirmUppercaseChars){
     choices = symbols.concat(number, charAlpha);
     }
@@ -67,8 +67,8 @@ function writePassword() {
     }
     else if (confirmNumberofChars && confirmLowercaseChars && confirmUppercaseChars) {
     choices = number.concat(charAlpha, charAlpha2);
-  }
-  // If else if for 2 positive options 
+    }
+  // If else if for 2 positive outcome of choices 
     if (confirmCharSymbols && confirmNumberofChars) {
       choices = symbols.concat(number);
       } 
@@ -87,4 +87,19 @@ function writePassword() {
       else if (confirmNumberofChars && confirmUppercaseChars) {
       choices = number.concat(charAlpha2);
     }
+    // If else if for 1 positive outcome of choices
+    // Else if for 1 positive option
+        if (confirmCharSymbols) {
+        choices = symbols;
+        }
+        else if (confirmNumberofChars) {
+        choices = number;
+        }
+        else if (confirmLowercaseChars) {
+        choices = charAlpha;
+        }
+        // Created space variable to fill uppercase conversion
+        else if (confirmUppercase) {
+        choices = space.concat(charAlpha2);
+        };
 }
