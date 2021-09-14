@@ -2,7 +2,8 @@
 
 ## Screenshot of Deployed Page
 
-<img src = ">
+<img src = "assets\images\Screenshot Pass-Gen1.png">
+<img src = "assets\images\Screenshot Pass-Gen2.png">
 
 ## User Story
 
