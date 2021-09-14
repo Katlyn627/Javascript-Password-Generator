@@ -53,58 +53,28 @@ function generatePassword() {
         choices = alert("You must choose a criteria!");
 
     }
-    // else if for all positive outcomes
+    // else if for all positive outcomes with and or operators
     else if (confirmCharSymbols && confirmNumberofChars && confirmUppercaseChars && confirmLowercaseChars) {
 
         choices = character.concat(number, alphaChar, alphaChar2);
     }
-    // else if for 3 positive outcomes of choices
-    else if (confirmCharSymbols && confirmNumberofChars && confirmUppercaseChars) {
-        choices = character.concat(number, alpha2);
+    // else if for 3 positive outcomes of choices with and or operators
+    else if ((confirmCharSymbols && confirmNumberofChars && confirmUppercaseChars) || (confirmCharSymbols && confirmNumberofChars && confirmLowercaseChars) || (confirmCharSymbols && confirmLowercaseChars && confirmUppercaseChars) || (confirmNumberofChars && confirmLowercaseChars && confirmUppercaseChars)) {
+        choices = character.concat(number, alphaChar, alphaChar2);
     }
-    else if (confirmCharSymbols && confirmNumberofChars && confirmLowercaseChars) {
-        choices = character.concat(number, alphaChar);
-    }
-    else if (confirmCharSymbols && confirmLowercaseChars && confirmUppercaseChars) {
-        choices = character.concat(alphaChar, alphaChar2);
-    }
-    else if (confirmNumberofChars && confirmLowercaseChars && confirmUppercaseChars) {
-        choices = number.concat(alphaChar, alphaChar2);
-    }
-    // else if for 2 positive outcomes of choices
-    else if (confirmCharSymbols && confirmNumberofChars) {
-        choices = character.concat(number);
-
-    } else if (confirmCharSymbols && confirmLowercaseChars) {
-        choices = character.concat(alphaChar);
-
-    } else if (confirmCharSymbols && confirmUppercaseChars) {
-        choices = character.concat(alphaChar2);
-    }
-    else if (confirmLowercaseChars && confirmNumberofChars) {
-        choices = alphaChar.concat(number);
-
-    } else if (confirmLowercaseChars && confirmUppercaseChars) {
-        choices = alphaChar.concat(alphaChar2);
-
-    } else if (confirmNumberofChars && confirmUppercaseChars) {
-        choices = number.concat(alphaChar2);
-    }
-    // else if for 1 positive outcome choice
-    else if (confirmCharSymbols) {
+    
+    // else if for 2 positive outcomes of choices with and or operators
+    else if ((confirmCharSymbols && confirmNumberofChars) || (confirmCharSymbols && confirmLowercaseChars) || (confirmCharSymbols && confirmUppercaseChars) || (confirmLowercaseChars && confirmNumberofChars) || (confirmLowercaseChars && confirmUppercaseChars) || (confirmNumberofChars && confirmUppercaseChars)) {
+        choices = character.concat(number, alphaChar, alphaChar2);
+    } 
+    // else if for 1 positive outcome choice with and or operators
+    else if ((confirmCharSymbols) || (confirmNumberofChars) || (confirmLowercaseChars)) {
         choices = character;
-    }
-    else if (confirmNumberofChars) {
-        choices = number;
-    }
-    else if (confirmLowercaseChars) {
-        choices = alphaChar;
     }
     // created space variable to fill uppercase conversion
     else if (confirmUppercaseChars) {
         choices = space.concat(alphaChar2);
     };
-
     // Create var password placeholder for empty array when length is chosen
     var password = [];
     // Create for loop to randomly select password variables
