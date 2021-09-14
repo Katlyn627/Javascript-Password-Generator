@@ -48,7 +48,7 @@ function generatePassword() {
     };
     // First if statement taking users choices to determine password outcome
     // If statement for all negative outcomes
-    if (!confirmCharSymbols && !confirmNumberofChars && !confirmUppercaseChars && !confirmLowercaseChars) {
+    if (!(confirmCharSymbols || confirmNumberofChars || confirmUppercaseChars || confirmLowercaseChars)){
         choices = alert("You must choose a criteria!");
 
     }
