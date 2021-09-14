@@ -32,14 +32,14 @@ getPass.addEventListener("click", function () {
 // Assignment code create function to generate password
 function generatePassword() {
     // Asks for user input
-    enter = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128"));
+    enter = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128 characters!"));
     // First if statement for user validation 
     if (!enter) {
-        alert("This needs a value");
+        alert("This needs a value!!");
     } else if (enter < 8 || enter > 128) {
         // Validates the users choice input
         // Starts user input prompts
-        enter = parseInt(prompt("You must choose between 8 and 128"));
+        enter = parseInt(prompt("You must choose between 8 and 128 characters!"));
 
     } else {
         // Continues once user inputs are valid and complete
