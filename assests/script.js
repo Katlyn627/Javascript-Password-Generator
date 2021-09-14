@@ -70,11 +70,7 @@ function generatePassword() {
     } 
     // else if for 1 positive outcome choice with and or operators
     else if ((confirmCharSymbols) || (confirmNumberofChars) || (confirmLowercaseChars)) {
-        choices = character;
-    }
-    // created space variable to fill uppercase conversion
-    else if (confirmUppercaseChars) {
-        choices = space.concat(alphaChar2);
+        choices = character.concat(number, alphaChar, alphaChar2);
     };
     // Create var password placeholder for empty array when length is chosen
     var password = [];
