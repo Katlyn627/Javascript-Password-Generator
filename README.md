@@ -32,4 +32,12 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-## 
+## The Process
+
+
+
+# Deployment 
+
+Public Page: https://katlyn627.github.io/Javascript-Password-Generator/
+
+Github Page: https://github.com/Katlyn627/Javascript-Password-Generator
