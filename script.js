@@ -22,9 +22,10 @@ var toUpper = function (x) {
 alphaChar2 = alphaChar.map(toUpper);
 
 var getPass = document.querySelector("#generate");
-
+// Event listener allows me to click on Generate Password button
 getPass.addEventListener("click", function () {
     pass = generatePassword();
+    //Create place holder for password
     document.getElementById("password").placeholder = pass;
 });
 
