@@ -10,8 +10,6 @@ character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Alphabetical characters
 alphaChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-// Space for the Uppercase conversion
-space = [];
 // Choices declared outside the if statement
 var choices;
 // Convert letters to uppercase 
@@ -84,7 +82,7 @@ function generatePassword() {
     UserInput(pass);
     return pass;
 }
-// Created function input to use textcontent
+// Created function taking user input and creating textcontent
 function UserInput(pass) {
     document.getElementById("password").textContent = pass;
 

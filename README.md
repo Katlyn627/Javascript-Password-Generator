@@ -34,6 +34,25 @@ THEN the password is either displayed in an alert or written to the page
 ```
 ## The Process
 
+```
+Create and understand how the Javascript will work with the HTML to create a reliable and safe password.
+
+* HTML: Didn't need to edit HTML as it was provided.
+
+* Javascript:
+    * Created variables for numbers, characters and symbols.
+    * Added and edited event listener that was given with code
+    * Created password generator function
+    * Created If/Else statements to make password generator function work
+        * Consolidated code using && (AND) and || (OR) operators
+    * Created pasword variable with empty array
+    * Created for loop to randomly select variables    
+    * Joined password array with user input
+    * Created function taking user input and creating textcontent
+
+* CSS: Didn't need to edit CSS as it was provided.
+```
+
 
 
 # Deployment 
