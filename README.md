@@ -1,5 +1,9 @@
 # Javascript-Password-Generator
 
+## Screenshot of Deployed Page
+
+<img src = ">
+
 ## User Story
 
 ```
