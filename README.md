@@ -53,8 +53,6 @@ Create and understand how the Javascript will work with the HTML to create a rel
 * CSS: Didn't need to edit CSS as it was provided.
 ```
 
-
-
 # Deployment 
 
 Public Page: https://katlyn627.github.io/Javascript-Password-Generator/
